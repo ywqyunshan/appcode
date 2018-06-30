@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">appcode</string>
+    <string name="handler_send1">主线程向子线程发送数据</string>
+    <string name="handler_send2">子线程向主线程发送数据</string>
+    <string name="jsbridge_native">native调用JS方法</string>
+</resources>
