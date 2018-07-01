@@ -3,4 +3,10 @@
     <string name="handler_send1">主线程向子线程发送数据</string>
     <string name="handler_send2">子线程向主线程发送数据</string>
     <string name="jsbridge_native">native调用JS方法</string>
+    <string name="handler_title">线程通信</string>
+    <string name="binder_title">进程通信</string>
+    <string name="jsbridge_title">JsBridge</string>
+    <string name="custonview_title">自定义View</string>
+    <string name="animation_title">动画</string>
+    <string name="animation_switch">交互</string>
 </resources>

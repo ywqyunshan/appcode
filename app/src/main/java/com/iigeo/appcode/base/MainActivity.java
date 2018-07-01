@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
-    @OnClick({R.id.handlerBtn, R.id.webviewBtn, R.id.BinderBtn,R.id.CustomViewBtn})
+    @OnClick({R.id.handlerBtn, R.id.webviewBtn, R.id.BinderBtn,R.id.CustomViewBtn,R.id.AnimationBtn})
     public void onViewClicked(View view) {
         switch (view.getId()) {
             case R.id.handlerBtn:
@@ -44,6 +44,9 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.CustomViewBtn:
                 startActivity(new Intent(this,CustomViewActivity.class));
+                break;
+            case R.id.AnimationBtn:
+                startActivity(new Intent(this,AnimationActivity.class));
                 break;
         }
     }

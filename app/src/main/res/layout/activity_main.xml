@@ -15,24 +15,30 @@
             android:layout_height="match_parent">
             <Button
                 android:id="@+id/handlerBtn"
-                android:text="线程通信"
+                android:text="@string/handler_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
             <Button
                 android:id="@+id/webviewBtn"
-                android:text="JsBridge"
+                android:text="@string/jsbridge_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
             <Button
                 android:id="@+id/BinderBtn"
-                android:text="进程通信"
+                android:text="@string/binder_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+                      <Button
+                android:id="@+id/CustomViewBtn"
+                android:text="@string/custonview_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
             <Button
-                android:id="@+id/CustomViewBtn"
-                android:text="自定义View"
+                android:id="@+id/AnimationBtn"
+                android:text="@string/animation_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
+
 
         </LinearLayout>
     </ScrollView>

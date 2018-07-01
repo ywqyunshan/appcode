@@ -19,10 +19,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".base.HandlerActivity" />
-        <activity android:name=".base.WebActivity" />
-        <activity android:name=".base.BinderActivity" />
-        <activity android:name=".base.CustomViewActivity"/>
+        <activity android:name=".base.HandlerActivity" android:label="@string/handler_title"/>
+        <activity android:name=".base.WebActivity" android:label="@string/jsbridge_title" />
+        <activity android:name=".base.BinderActivity" android:label="@string/binder_title"/>
+        <activity android:name=".base.CustomViewActivity" android:label="@string/custonview_title"/>
+        <activity android:name=".base.AnimationActivity" android:label="@string/animation_title"/>
     </application>
 
 </manifest>
