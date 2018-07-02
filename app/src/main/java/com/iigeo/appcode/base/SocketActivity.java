@@ -90,8 +90,11 @@ public class SocketActivity extends AppCompatActivity {
         public void run() {
             super.run();
             try {
+                //创建socket
                 Socket socket=new Socket(host,port);
+                //获取客户端发送数据
                 printWriter=new PrintWriter(new BufferedWriter(new OutputStreamWriter(socket.getOutputStream(),"UTF-8")),true);
+                //获取服务返回数据
                 bufferedReader=new BufferedReader(new InputStreamReader(socket.getInputStream()));
                 while (!Thread.currentThread().isInterrupted()){
                         if ((recevieMsg=bufferedReader.readLine())!=null){
