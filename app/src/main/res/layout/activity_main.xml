@@ -34,8 +34,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
             <Button
-                android:id="@+id/AnimationBtn"
-                android:text="@string/animation_title"
+            android:id="@+id/AnimationBtn"
+            android:text="@string/animation_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/SocketClientBIOBtn"
+                android:text="@string/socket_title"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 

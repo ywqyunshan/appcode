@@ -9,4 +9,5 @@
     <string name="custonview_title">自定义View</string>
     <string name="animation_title">动画</string>
     <string name="animation_switch">交互</string>
+    <string name="socket_title">Socket通信</string>
 </resources>
