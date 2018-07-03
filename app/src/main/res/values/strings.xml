@@ -10,4 +10,5 @@
     <string name="animation_title">动画</string>
     <string name="animation_switch">交互</string>
     <string name="socket_title">Socket通信</string>
+    <string name="title_activity_rx">Rx2研究</string>
 </resources>

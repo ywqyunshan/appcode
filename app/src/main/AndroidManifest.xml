@@ -34,8 +34,12 @@
         <activity
             android:name=".base.AnimationActivity"
             android:label="@string/animation_title" />
-        <activity android:name=".base.SocketActivity"
-            android:label="@string/socket_title"/>
+        <activity
+            android:name=".base.SocketActivity"
+            android:label="@string/socket_title" />
+        <activity
+            android:name=".base.RxActivity"
+            android:label="@string/title_activity_rx"/>
     </application>
 
 </manifest>
