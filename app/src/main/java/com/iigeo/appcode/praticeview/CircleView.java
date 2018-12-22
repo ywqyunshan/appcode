@@ -4,7 +4,9 @@ import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Color;
+import android.graphics.LinearGradient;
 import android.graphics.Paint;
+import android.graphics.Shader;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
@@ -18,8 +20,9 @@ public class CircleView extends View {
 
     private Paint paint=new Paint(Paint.ANTI_ALIAS_FLAG);
     private int mColor=Color.BLUE;
+    Shader mShader;
 
-    private int defaultSize=200;
+    private int defaultSize=500;
     public CircleView(Context context) {
         super(context);
         init();
@@ -40,10 +43,21 @@ public class CircleView extends View {
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        int width=getWidth();
-        int height=getHeight();
+        int paddingLeft=getPaddingLeft();
+        int paddingRight=getPaddingRight();
+        int paddingTop=getPaddingTop();
+        int paddingBottom=getPaddingBottom();
+        int width=getWidth()-paddingLeft-paddingRight;
+        int height=getHeight()-paddingTop-paddingBottom;
+
         int radius=Math.min(width,height)/2;
-        canvas.drawCircle(width/2,height/2,radius,paint);
+        //线性渐变
+        mShader=new LinearGradient(paddingLeft,paddingTop,paddingLeft+width,paddingTop+height,
+                Color.parseColor("#E91E63"),
+                Color.parseColor("#2196F3"), Shader.TileMode.CLAMP);
+        //
+        paint.setShader(mShader);
+        canvas.drawCircle(paddingLeft+width/2,paddingTop+height/2,radius,paint);
     }
 
     @Override

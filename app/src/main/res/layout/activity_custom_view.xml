@@ -6,21 +6,23 @@
     android:layout_height="match_parent"
     tools:context=".base.CustomViewActivity">
 
-    <com.iigeo.appcode.praticeview.CircleView
+   <!-- <com.iigeo.appcode.praticeview.CircleView
         android:id="@+id/circleView"
+        android:layout_margin="10dp"
+        android:padding="20dp"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_height="wrap_content" />-->
+    <com.iigeo.appcode.praticeview.CircleImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
-    <com.iigeo.appcode.praticeview.SquareImageView
+ <!--   <com.iigeo.appcode.praticeview.SquareImageView
         android:id="@+id/squareImageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@mipmap/ic_launcher"
         app:layout_constraintStart_toStartOf="@+id/circleView"
-        app:layout_constraintTop_toBottomOf="@+id/circleView" />
+        app:layout_constraintTop_toBottomOf="@+id/circleView" />-->
 
 
 </android.support.constraint.ConstraintLayout>

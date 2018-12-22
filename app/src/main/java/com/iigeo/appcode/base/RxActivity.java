@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 
 import com.iigeo.appcode.R;
 import com.iigeo.appcode.rxjava.BackPressDemo;
+import com.iigeo.appcode.rxjava.BaseObserverDemo;
 import com.iigeo.appcode.rxjava.MapDemo;
 import com.iigeo.appcode.rxjava.OperatorDemo;
 import com.iigeo.appcode.rxjava.ZIPDemo;
@@ -22,19 +23,34 @@ public class RxActivity extends AppCompatActivity {
     }
 
     private void initRx() {
-        MapDemo mapDemo =new MapDemo(TAG);
-        /*mapDemo.subConcatMap();
-        mapDemo.subFlatMap();
-        mapDemo.submutilScheduler();
-        mapDemo.subMap();*/
+
+        /*-------map flatmap concatmap------------------*/
+
+        /*BaseObserverDemo baseObserverDemo =new BaseObserverDemo(TAG);
+        baseObserverDemo.submutilScheduler();*/
+
+        /*--------------------zip------------------------*/
+
         //ZIPDemo zipDemo=new ZIPDemo(TAG);
         //zipDemo.subZip();
+
+        /*------------------BackPressDemo----------------*/
         /*BackPressDemo backPressDemo=new BackPressDemo(TAG);
         backPressDemo.subSynFlowBackPress();*/
+
+        /*------------------OperatorDemo----------------*/
         OperatorDemo operatorDemo=new OperatorDemo(TAG);
         //operatorDemo.subDistinct();
         //operatorDemo.subTask();
-        operatorDemo.subMerge();
-        operatorDemo.subConcat();
+        //operatorDemo.subMerge();
+        //operatorDemo.subConcat();
+        //operatorDemo.subSingle();
+        //operatorDemo.subCompletable();
+        //operatorDemo.subMaybe();
+
+        /*------------------MapDemo----------------*/
+        MapDemo mapDemo=new MapDemo(TAG);
+        //mapDemo.subFlatMap();
+        mapDemo.subSwitchMap();
     }
 }

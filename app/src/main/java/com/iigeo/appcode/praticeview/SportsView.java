@@ -9,6 +9,10 @@ import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
 
+import java.util.List;
+import java.util.concurrent.Executor;
+import java.util.concurrent.Executors;
+
 public class SportsView  extends View{
 
     final float radius = 160;

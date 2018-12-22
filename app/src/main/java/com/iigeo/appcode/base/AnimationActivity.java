@@ -3,6 +3,8 @@ package com.iigeo.appcode.base;
 import android.animation.ObjectAnimator;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.animation.AnticipateInterpolator;
+import android.view.animation.LinearInterpolator;
 import android.widget.Button;
 import android.widget.ImageView;
 
@@ -37,12 +39,13 @@ public class AnimationActivity extends AppCompatActivity {
     @OnClick(R.id.button)
     public void onViewClicked() {
         // ViewPropertyAmimation
-        //animationIv.animate().translationX(500).setDuration(500).setInterpolator(new AnticipateInterpolator());
+        animationIv.animate().translationX(500).translationY(500).
+                setDuration(500).setInterpolator(new LinearInterpolator());
         // ObjectAmimation
         //ObjectAnimator objectAnimator=ObjectAnimator.ofFloat(animationIv,"translationX",100);
         //objectAnimator.start();
 
-        ObjectAnimator animator = ObjectAnimator.ofFloat(sportsView,"progress",100);
-        animator.start();
+        //ObjectAnimator animator = ObjectAnimator.ofFloat(sportsView,"progress",100);
+        //animator.start();
     }
 }
